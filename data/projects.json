@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ip2",
+    "name": "Rummikub",
+    "date": "2021-12-01",
+    "members": 7,
+    "techStack": {
+      "frontend": ["React", "WebSockets", "JWT"],
+      "backend": ["Spring Boot", "WebSockets", "JWT", "Messaging", "Oracle DB"],
+      "deployment": ["Docker", "CI/CD", "Google Cloud"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": "internship",
+    "name": "The Sharks",
+    "date": "2022-06-01",
+    "members": 2,
+    "techStack": {
+      "frontend": ["Angular", "JWT"],
+      "backend": ["ASP.NET Core", "Azure Cloud", "JWT", "MS SQL Server"],
+      "deployment": ["Azure"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": "ip1",
+    "name": "PhotoBox",
+    "date": "2021-04-01",
+    "members": 5,
+    "techStack": {
+      "frontend": ["ASP.NET MVC", "Kotlin"],
+      "backend": ["ASP.NET Core", "Oracle DB"],
+      "deployment": ["Google Cloud"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": "thelab",
+    "name": "KdG VR Experience",
+    "date": "2022-04-01",
+    "members": 3,
+    "techStack": {
+      "frontend": ["AFrame", "Bootstrap", "JavaScript"],
+      "backend": ["Spring Boot", "Oracle DB"],
+      "deployment": ["Google Cloud"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shiny {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 100%;
+    opacity: 0;
+    // transform: rotate(30deg);
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 77%,
+      rgba(255, 255, 255, 0.25) 92%,
+      transparent 100%
+    );
+  }
+
+  &:hover::after {
+    transition-delay: 500ms;
+    opacity: 1;
+    top: 0;
+    left: -30%;
+  }
+}

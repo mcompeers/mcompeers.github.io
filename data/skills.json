@@ -1,0 +1,50 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "rating": 5,
+    "tags": ["framework", "frontend", "javascript"]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "rating": 4,
+    "tags": ["language"]
+  },
+  {
+    "id": "csharp",
+    "name": "C#",
+    "rating": 2,
+    "tags": ["language", "dotnet"]
+  },
+  {
+    "id": "spring-boot",
+    "name": "Spring Boot",
+    "rating": 1,
+    "tags": ["framework", "backend", "java"]
+  },
+  {
+    "id": "unity",
+    "name": "Unity",
+    "rating": 3,
+    "tags": ["tool", "gamedevelopment", "csharp"]
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "rating": 3,
+    "tags": ["framework", "frontend", "react"]
+  },
+  {
+    "id": "angular",
+    "name": "Angular",
+    "rating": 3,
+    "tags": ["framework", "frontend", "javascript"]
+  },
+  {
+    "id": "firebase",
+    "name": "Firebase",
+    "rating": 3,
+    "tags": ["api", "cloud"]
+  }
+]
