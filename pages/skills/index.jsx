@@ -20,22 +20,16 @@ export default function Skills({ skills }) {
   );
 
   return (
-    <Layout>
-      <Head>
-        <title>Skills</title>
-      </Head>
+    <Layout title={"Skills"}>
       <Body>
         <TitleBar>
-          <Title name={"Skills"} />
-          <div>
-            <input
-              type="text"
-              value={filter}
-              onChange={handleFilterChange}
-              placeholder="Search"
-              className="rounded-md bg-transparent p-2 ring-1 ring-slate-500"
-            />
-          </div>
+          <input
+            type="text"
+            value={filter}
+            onChange={handleFilterChange}
+            placeholder="Search"
+            className="w-full rounded-md bg-transparent p-2 ring-1 ring-slate-500 md:w-fit"
+          />
         </TitleBar>
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {filteredSkills.map((skill) => (

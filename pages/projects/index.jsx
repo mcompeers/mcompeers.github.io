@@ -14,14 +14,9 @@ export default function Project({ projects }) {
   const projectsByYear = groupBy(projects, (p) => p.date.substr(0, 7));
 
   return (
-    <Layout>
-      <Head>
-        <title>Projects</title>
-      </Head>
+    <Layout title={"Projects"}>
       <Body>
-        <TitleBar>
-          <Title name={"Projects"} />
-        </TitleBar>
+        {/* <TitleBar></TitleBar> */}
         <section className="grid grid-cols-1 gap-4">
           {Object.keys(projectsByYear)
             .sort((a, b) => compareDesc(new Date(a), new Date(b)))

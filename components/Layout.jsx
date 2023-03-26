@@ -1,27 +1,26 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import NavLink from "./NavLink";
+import NavBar from "./NavBar";
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
   return (
-    <div className="min-h-screen overflow-auto bg-gradient-to-t from-slate-900 to-slate-800 text-white">
+    <>
       <Head>
-        <title>Maxim Compeers</title>
+        <title>title</title>
       </Head>
-      <main className="container mx-auto px-3">
-        <div className="my-10">
-          <h1 className="text-3xl font-bold lg:text-5xl">Maxim compeers</h1>
+      <div className="relative min-h-screen bg-gradient-to-t from-slate-900 to-slate-800 text-white">
+        <NavBar />
+        <div className="container mx-auto">
+          <header className="my-10">
+            <h1 className="mx-auto  w-fit text-3xl font-bold lg:text-5xl">
+              {title}
+            </h1>
+          </header>
+          <main className="overflow-auto px-3">
+            <div>{children}</div>
+          </main>
+          <footer className="mt-10 ">Maxim Compeers 2023</footer>
         </div>
-        <div className="item-center flex gap-4">
-          <NavLink href={"/"}>Home</NavLink>
-          <NavLink href={"/"}>About</NavLink>
-          <NavLink href={"/skills"}>Skills</NavLink>
-          <NavLink href={"/projects"}>Projects</NavLink>
-        </div>
-        <div className="h-0.1 bg-slate-50"></div>
-        <div>{children}</div>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
