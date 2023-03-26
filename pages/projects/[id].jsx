@@ -12,7 +12,7 @@ import Card from "@/components/cards/Card";
 
 export default function Project({ project }) {
   return (
-    <Layout>
+    <Layout title={project.name}>
       <Head>
         <title>Project {project.name}</title>
       </Head>
@@ -21,9 +21,9 @@ export default function Project({ project }) {
           <Title name={"Back"} />
         </TitleBar>
         <section className="my-2 flex flex-col gap-4">
-          <div className="col-span-4 flex flex-col gap-2">
+          {/* <div className="col-span-4 flex flex-col gap-2">
             <span className="text-4xl font-bold">{project.name}</span>
-          </div>
+          </div> */}
           <Card className="flex flex-col gap-2 p-2 md:col-span-2 lg:col-span-4">
             <span className="flex items-center gap-2 text-lg opacity-50">
               <Bars3BottomLeftIcon className="h-6 w-6" /> Description
