@@ -6,9 +6,20 @@ export default function Layout({ children, title }) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    document.body.classList.toggle("dark-mode", darkMode);
-    document.body.classList.toggle("dark", darkMode);
-  }, [darkMode]);
+    const dm = localStorage.getItem("darkMode") === "true";
+    document.body.classList.toggle("dark-mode", dm);
+    document.body.classList.toggle("dark", dm);
+    setDarkMode(dm);
+  }, []);
+
+  const toggleDarkMode = (value) => {
+    setDarkMode(() => {
+      localStorage.setItem("darkMode", value ? "true" : "false");
+      document.body.classList.toggle("dark-mode", value);
+      document.body.classList.toggle("dark", value);
+      return value;
+    });
+  };
 
   return (
     <>
@@ -19,7 +30,7 @@ export default function Layout({ children, title }) {
         className="relative h-screen overflow-auto dark:bg-neutral-900 dark:text-white"
         style={{ colorScheme: darkMode ? "dark" : "light" }}
       >
-        <NavBar onDarkModeChange={setDarkMode} darkMode={darkMode} />
+        <NavBar onDarkModeChange={toggleDarkMode} darkMode={darkMode} />
         <div className="container mx-auto">
           <header className="mb-10 mt-10">
             <h1 className="mx-auto  w-fit text-3xl font-bold lg:text-5xl">
