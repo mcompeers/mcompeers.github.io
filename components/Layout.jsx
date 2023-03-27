@@ -6,8 +6,8 @@ export default function Layout({ children, title }) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    document.body.classList.toggle("dark-mode");
-    document.body.classList.toggle("dark");
+    document.body.classList.toggle("dark-mode", darkMode);
+    document.body.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
   return (
