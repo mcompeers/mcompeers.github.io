@@ -19,7 +19,7 @@ export default function NavBar({ onDarkModeChange, darkMode }) {
   };
 
   return (
-    <div className="sticky top-0 left-0 right-0 z-50 bg-slate-100 p-4 dark:bg-neutral-800">
+    <div className="sticky top-0 left-0 right-0 z-50 bg-slate-100/60 p-4 backdrop-blur-md dark:bg-neutral-800/60">
       <div className="container mx-auto flex flex-col gap-4 md:flex-row md:items-center">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold">Maxim Compeers</div>
