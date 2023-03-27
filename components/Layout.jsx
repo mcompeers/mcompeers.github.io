@@ -1,24 +1,33 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 
 export default function Layout({ children, title }) {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark");
+  }, [darkMode]);
+
   return (
     <>
       <Head>
-        <title>title</title>
+        <title>{title ? "MC | " + title : "Maxim Compeers"}</title>
       </Head>
-      <div className="relative min-h-screen bg-gradient-to-t from-slate-900 to-slate-800 text-white">
-        <NavBar />
+      <div
+        className="relative h-screen overflow-auto dark:bg-neutral-900 dark:text-white"
+        style={{ colorScheme: darkMode ? "dark" : "light" }}
+      >
+        <NavBar onDarkModeChange={setDarkMode} darkMode={darkMode} />
         <div className="container mx-auto">
-          <header className="my-10">
+          <header className="mb-10 mt-10">
             <h1 className="mx-auto  w-fit text-3xl font-bold lg:text-5xl">
               {title}
             </h1>
           </header>
-          <main className="overflow-auto px-3">
-            <div>{children}</div>
-          </main>
-          <footer className="mt-10 ">Maxim Compeers 2023</footer>
+          <main className=" px-3">{children}</main>
+          <footer className="mt-10 "></footer>
         </div>
       </div>
     </>
