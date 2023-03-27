@@ -2,8 +2,6 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import LinkCard from "@/components/cards/LinkCard";
 import { getData } from "@/lib/getData";
-import TitleBar from "@/components/TitleBar";
-import Title from "@/components/Title";
 import Body from "@/components/Body";
 import { compareDesc, getMonth } from "date-fns";
 import { groupBy } from "lodash";
@@ -15,6 +13,12 @@ export default function Project({ projects }) {
 
   return (
     <Layout title={"Projects"}>
+      <Head>
+        <meta
+          name="description"
+          content="Project where I worked on or am working on"
+        />
+      </Head>
       <Body>
         {/* <TitleBar></TitleBar> */}
         <section className="grid grid-cols-1 gap-4">

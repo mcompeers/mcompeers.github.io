@@ -36,3 +36,9 @@
     left: -30%;
   }
 }
+
+@layer components {
+  .icon {
+    @apply h-6 w-6;
+  }
+}

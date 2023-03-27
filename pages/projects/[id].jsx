@@ -14,7 +14,7 @@ export default function Project({ project }) {
   return (
     <Layout title={project.name}>
       <Head>
-        <title>Project {project.name}</title>
+        <meta name="description" content={project.description} />
       </Head>
       <Body>
         <TitleBar>
