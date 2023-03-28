@@ -2,9 +2,9 @@ import { StarIcon } from "@heroicons/react/24/outline";
 import { StarIcon as StarIconSolid } from "@heroicons/react/24/solid";
 import Card from "./Card";
 
-export default function SkillCard({ skill }) {
+export default function SkillCard({ skill, special }) {
   return (
-    <Card shiny>
+    <Card shiny special={special}>
       <div className="flex flex-col items-center gap-4">
         <div className="text-lg font-bold">{skill.name}</div>
         <div className="flex transition-opacity">
@@ -13,7 +13,10 @@ export default function SkillCard({ skill }) {
               .fill(1)
               .map((_, i) =>
                 i + 1 <= skill.rating ? (
-                  <StarIconSolid key={i} className="icon text-yellow-500" />
+                  <StarIconSolid
+                    key={i}
+                    className={`icon ${special ? "text-yellow-500" : ""}`}
+                  />
                 ) : (
                   <StarIcon key={i} className="icon" />
                 )

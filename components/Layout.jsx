@@ -27,13 +27,13 @@ export default function Layout({ children, title }) {
         <title>{title ? "MC | " + title : "Maxim Compeers"}</title>
       </Head>
       <div
-        className="relative h-screen overflow-auto dark:bg-neutral-900 dark:text-white"
+        className="relative h-screen overflow-auto bg-slate-50 dark:bg-zinc-900 dark:text-white"
         style={{ colorScheme: darkMode ? "dark" : "light" }}
       >
         <NavBar onDarkModeChange={toggleDarkMode} darkMode={darkMode} />
         <div className="container mx-auto">
           <header className="mb-10 mt-10">
-            <h1 className="mx-auto  w-fit text-3xl font-bold lg:text-5xl">
+            <h1 className="mx-auto w-fit text-3xl font-bold lg:text-5xl">
               {title}
             </h1>
           </header>
