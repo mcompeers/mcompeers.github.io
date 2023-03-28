@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+$tb-transspeed: 0.3s;
+
 .shiny {
   position: relative;
   overflow: hidden;
@@ -40,5 +42,30 @@
 @layer components {
   .icon {
     @apply h-6 w-6;
+  }
+
+  h3 {
+    @apply mb-4 mt-8 text-xl font-bold md:text-2xl;
+  }
+}
+
+.toggle-button {
+  position: relative;
+
+  * {
+    position: absolute;
+    inset: 0;
+  }
+
+  .on {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: all $tb-transspeed ease-in-out;
+  }
+
+  .off {
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: all $tb-transspeed ease-in-out;
   }
 }

@@ -3,48 +3,56 @@
     "id": "react",
     "name": "React",
     "rating": 5,
-    "tags": ["framework", "frontend", "javascript"]
+    "tags": ["framework", "frontend", "javascript"],
+    "spotlight": true
   },
   {
     "id": "java",
     "name": "Java",
     "rating": 4,
-    "tags": ["language"]
+    "tags": ["language"],
+    "spotlight": true
   },
   {
     "id": "csharp",
     "name": "C#",
     "rating": 2,
-    "tags": ["language", "dotnet"]
+    "tags": ["language", "dotnet"],
+    "spotlight": true
   },
   {
     "id": "spring-boot",
     "name": "Spring Boot",
     "rating": 1,
-    "tags": ["framework", "backend", "java"]
+    "tags": ["framework", "backend", "java"],
+    "spotlight": false
   },
   {
     "id": "unity",
     "name": "Unity",
     "rating": 3,
-    "tags": ["tool", "gamedevelopment", "csharp"]
+    "tags": ["tool", "gamedevelopment", "csharp"],
+    "spotlight": false
   },
   {
     "id": "nextjs",
     "name": "Next.js",
     "rating": 3,
-    "tags": ["framework", "frontend", "react"]
+    "tags": ["framework", "frontend", "react"],
+    "spotlight": false
   },
   {
     "id": "angular",
     "name": "Angular",
     "rating": 3,
-    "tags": ["framework", "frontend", "javascript"]
+    "tags": ["framework", "frontend", "javascript"],
+    "spotlight": false
   },
   {
     "id": "firebase",
     "name": "Firebase",
     "rating": 3,
-    "tags": ["api", "cloud"]
+    "tags": ["api", "cloud"],
+    "spotlight": false
   }
 ]
